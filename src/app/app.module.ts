@@ -27,8 +27,8 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
