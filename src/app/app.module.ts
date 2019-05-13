@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { RouterModule, Routes } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -12,6 +13,16 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
+
+const routes: Routes = [
+  { path: 'about', component: AboutComponent},
+  { path: 'projects', component: ProjectsComponent},
+  { path: 'experience', component: ExperienceComponent},
+  { path: 'contact', component: ContactComponent},
+  // { path: 'home', redirectTo: '', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
+  { path: '**', redirectTo: '/' }
+];
 
 @NgModule({
   declarations: [
@@ -26,9 +37,10 @@ import { SkillsComponent } from './skills/skills.component';
     SkillsComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
