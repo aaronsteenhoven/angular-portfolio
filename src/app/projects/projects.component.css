@@ -1,0 +1,27 @@
+.card-img-top{
+    width: 22em;
+    height: 20em;
+    margin-top: 24px;
+    margin-bottom: 16px;  
+    border-bottom: 2px solid black;
+}
+
+.card-body{
+  
+}
+
+.project-headings{
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+    font-style: bold;
+}
+
+/* .card card-image{
+    max-width:500px;
+} */
+
+.card-text{
+    font-family: cursive;
+    font-size: 50px;
+}

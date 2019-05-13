@@ -1,0 +1,30 @@
+#concord{
+    /* position: relative; */
+    /* float: right; */
+    margin-left: 45.8rem;
+
+}
+
+#bloom{
+    /* position: relative; */
+    /* float: right; */
+    margin-left: -33.8rem;
+
+}
+
+h3{
+    text-align: center;
+}
+
+h4 {
+    font-family: fantasy;
+    font-size: 28px;
+    text-align: center;
+}
+
+.card-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 2px;
+}
